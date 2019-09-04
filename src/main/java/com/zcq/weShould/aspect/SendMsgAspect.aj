@@ -27,6 +27,7 @@ public class SendMsgAspect {
     @AfterReturning(value = "doSomething()")
     public void sdgh(ProceedingJoinPoint joinpoint) {
         System.out.println("22333332222222222222222");
+        System.out.println("22222222222222hhhhh2222");
         MethodSignature sign = (MethodSignature) joinpoint.getSignature();
         Method method = sign.getMethod();
         System.out.print("接受方法："+method.getName()+" 前置日志");
